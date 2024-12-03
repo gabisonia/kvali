@@ -1,4 +1,4 @@
-# Kvali
+# Kvali - კვალი
 
 Kvali (Georgian: **კვალი**) is a lightweight and flexible .NET Core library for implementing audit trails in your applications. It helps you track changes, log actions, and maintain a detailed history of operations for auditing and debugging purposes.
 
