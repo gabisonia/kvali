@@ -46,13 +46,12 @@ public class AuditableDbContext(DbContextOptions options) : DbContext(options)
             if (actionType == default)
                 continue;
 
-            if (entry.Entity.GetType()
-                    .GetCustomAttributes(typeof(AuditActionAttribute), true)
+            if (entryType.GetCustomAttributes(typeof(AuditActionAttribute), true)
                     .FirstOrDefault() is AuditActionAttribute auditActionAttribute &&
                 auditActionAttribute.ActionType.ToString() != actionType)
                 continue;
 
-            var entityType = entry.Context.Model.FindEntityType(entry.Entity.GetType());
+            var entityType = entry.Context.Model.FindEntityType(entryType);
             var primaryKey = entityType?.FindPrimaryKey();
             var keyValues = primaryKey?.Properties
                 .Select(p => entry.Property(p.Name).CurrentValue ?? entry.Property(p.Name).OriginalValue)
