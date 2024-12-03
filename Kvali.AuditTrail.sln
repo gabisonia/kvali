@@ -1,12 +1,12 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kvali.AuditTrail", "src\Kvali.AuditTrail\Kvali.AuditTrail.csproj", "{B6B8AE90-ACAD-411E-942B-82CE708D028B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kvali.AuditTrail", "Kvali.AuditTrail\Kvali.AuditTrail.csproj", "{B6B8AE90-ACAD-411E-942B-82CE708D028B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{690B529C-933A-47D1-903B-16424E2517F3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{810BD960-D0FC-4889-BC8E-B01425DF2950}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kvali.AuditTrail.Tests", "tests\Kvali.AuditTrail.Tests\Kvali.AuditTrail.Tests.csproj", "{93707B25-0352-4F73-AA46-AE51213F6F97}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kvali.AuditTrail.Tests", "Kvali.AuditTrail.Tests\Kvali.AuditTrail.Tests.csproj", "{93707B25-0352-4F73-AA46-AE51213F6F97}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
