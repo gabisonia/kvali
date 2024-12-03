@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+
+        <Version>1.0.0</Version>
+        <Authors>Irakli Gabisonia</Authors>
+        <Company>YourCompany</Company>
+        <Description>Lightweight and flexible auditing library for Entity Framework Core.</Description>
+        <PackageTags>entity-framework;audit-trail;logging</PackageTags>
+        <RepositoryUrl>https://github.com/gabisonia/kvali</RepositoryUrl>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageProjectUrl>https://github.com/gabisonia/kvali</PackageProjectUrl>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0"/>
+    </ItemGroup>
+
+</Project>
