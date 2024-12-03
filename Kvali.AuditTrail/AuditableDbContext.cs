@@ -27,12 +27,14 @@ public class AuditableDbContext(DbContextOptions options) : DbContext(options)
 
         foreach (var entry in changeTracker.Entries())
         {
-            var isAuditable = entry.Entity.GetType().GetCustomAttributes(typeof(AuditableAttribute), true).Any() ||
+            var entryType = entry.Entity.GetType();
+
+            var isAuditable = entryType.GetCustomAttributes(typeof(AuditableAttribute), true).Any() ||
                               entry.Entity is IAuditable;
             if (!isAuditable)
                 continue;
 
-            var entityName = entry.Entity.GetType().Name;
+            var entityName = entryType.Name;
             var actionType = entry.State switch
             {
                 EntityState.Added => "Create",
