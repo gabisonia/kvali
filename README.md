@@ -67,6 +67,27 @@ public class User : IAuditable
 }
 ```
 
+### 4. Add and Apply Migrations
+
+
+Before using **Kvali**, ensure you generate and apply the necessary migrations to your database. Follow these steps:
+
+1. **Generate the Migration**:
+
+   Run the following command in the Package Manager Console or terminal:
+
+   ```bash
+   dotnet ef migrations add InitialAuditMigration
+   ```
+   
+2. **Apply the Migration:**:
+   
+   Run the following command to update the database with the migration:
+   ```bash
+   dotnet ef database update
+   ```
+   
+
 ## License
 
 Kvali is fully free to use, modify, and distribute for any purpose, personal or commercial. 
