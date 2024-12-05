@@ -42,7 +42,8 @@ public class AuditableDbContext(DbContextOptions options) : DbContext(options)
                 EntityState.Modified => "Update",
                 _ => null
             };
-            // Skip entries that are not Added or Deleted
+
+            // Skip entries that are not Added, Modified or Deleted.
             if (actionType == default)
                 continue;
 
