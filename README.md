@@ -1,4 +1,4 @@
-# Kvali
+# Kvali - კვალი
 
 Kvali (Georgian: **კვალი**) is a lightweight and flexible .NET Core library for implementing audit trails in your applications. It helps you track changes, log actions, and maintain a detailed history of operations for auditing and debugging purposes.
 
@@ -66,6 +66,27 @@ public class User : IAuditable
     public string Name { get; set; }
 }
 ```
+
+### 4. Add and Apply Migrations
+
+
+Before using **Kvali**, ensure you generate and apply the necessary migrations to your database. Follow these steps:
+
+1. **Generate the Migration**:
+
+   Run the following command in the Package Manager Console or terminal:
+
+   ```bash
+   dotnet ef migrations add InitialAuditMigration
+   ```
+   
+2. **Apply the Migration:**:
+   
+   Run the following command to update the database with the migration:
+   ```bash
+   dotnet ef database update
+   ```
+   
 
 ## License
 
